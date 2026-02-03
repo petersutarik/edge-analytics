@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReelMeal - Save Recipes from TikTok, Instagram & YouTube</title>
+    <meta name="description" content="ReelMeal makes it easy to save and organize recipes from your favorite food videos. AI automatically extracts ingredients and instructions.">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lora:wght@300;400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Lora:wght@300;400;500;600&display=swap" rel="stylesheet"></noscript>
+    <style>
+        body {
+            font-family: 'Lora', 'Georgia', 'Times New Roman', 'Times', serif;
+            font-display: swap;
+        }
+
+        .app-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 24px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+
+        .app-name {
+            font-family: 'PP Mondwest', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .app-tagline {
+            font-size: 1.25rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .app-store-badge {
+            display: inline-block;
+        }
+
+        .app-store-badge img {
+            height: 50px;
+        }
+
+        .features-section {
+            margin-bottom: 3rem;
+        }
+
+        .features-section h2 {
+            font-family: 'PP Mondwest', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            text-align: left;
+        }
+
+        .feature-card {
+            padding: 1.5rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .feature-card h3 {
+            font-family: 'PP Mondwest', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 0.75rem;
+        }
+
+        .feature-card p {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .feature-card ul {
+            margin: 0.5rem 0 0 0;
+            padding-left: 1.25rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .feature-card li {
+            margin-bottom: 0.25rem;
+        }
+
+        .legal-links {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e9ecef;
+            text-align: center;
+        }
+
+        .legal-links a {
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin: 0 1rem;
+        }
+
+        .legal-links a:hover {
+            color: #333;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .app-name {
+                font-size: 2rem;
+            }
+
+            .app-tagline {
+                font-size: 1.1rem;
+            }
+
+            .app-icon {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back-link">&larr; Edge Analytics</a>
+
+        <div class="app-header">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect fill='%23FF6B6B' width='120' height='120' rx='24'/%3E%3Ctext x='60' y='75' text-anchor='middle' font-size='50' fill='white'%3E🍳%3C/text%3E%3C/svg%3E" alt="ReelMeal App Icon" class="app-icon">
+            <h1 class="app-name">ReelMeal</h1>
+            <p class="app-tagline">Save recipes from your favorite food videos</p>
+            <!-- <a href="https://apps.apple.com/app/reelmeal" class="app-store-badge">
+                <img src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg" alt="Download on the App Store">
+            </a> -->
+        </div>
+
+        <main class="main-content">
+            <section class="features-section">
+                <h2>Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>Import from Anywhere</h3>
+                        <p>Save recipes from TikTok, Instagram, YouTube, and websites. AI automatically extracts ingredients and instructions from video captions.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>Organize Your Recipes</h3>
+                        <p>Create custom cookbooks to organize your collection. Mark favorites for quick access and filter by cuisine, difficulty, or cook time.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>Smart Shopping Lists</h3>
+                        <p>Auto-generate shopping lists from recipes. Consolidate ingredients, adjust quantities, and check off items as you shop.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>Cook with Confidence</h3>
+                        <p>Step-by-step instructions, ingredient scaling for any serving size, and progress tracking while you cook.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features-section">
+                <h2>How It Works</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>1. Share a Video</h3>
+                        <p>Find a recipe video on TikTok, Instagram, or YouTube. Tap Share and select ReelMeal.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>2. AI Does the Rest</h3>
+                        <p>Our AI extracts the recipe details, ingredients, and cooking instructions automatically.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>3. Cook & Enjoy</h3>
+                        <p>Follow the recipe, create shopping lists, and save to your cookbooks for later.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>4. Share Cookbooks</h3>
+                        <p>Create and share cookbooks with friends and family. Sync across all your devices with iCloud.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class="legal-links">
+            <a href="/reelmeal/privacy/">Privacy Policy</a>
+            <a href="mailto:peter@edgeanalytics.sk">Contact Support</a>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2025 Edge Analytics. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
