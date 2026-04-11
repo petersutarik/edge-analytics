@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>draftbot - AI content pushed straight to TikTok drafts</title>
+    <meta name="description" content="draftbot is an internal tool by Edge Analytics that generates AI-authored social media content and pushes it to TikTok drafts for manual review.">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lora:wght@300;400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Lora:wght@300;400;500;600&display=swap" rel="stylesheet"></noscript>
+    <style>
+        body {
+            font-family: 'Lora', 'Georgia', 'Times New Roman', 'Times', serif;
+            font-display: swap;
+        }
+
+        .app-header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .app-name {
+            font-family: 'PP Mondwest', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .app-tagline {
+            font-size: 1.15rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .content {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .content h2 {
+            font-family: 'PP Mondwest', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 1.35rem;
+            font-weight: 500;
+            color: #333;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .content p {
+            font-size: 0.98rem;
+            color: #555;
+            line-height: 1.75;
+            margin-bottom: 1rem;
+        }
+
+        .content ul {
+            color: #555;
+            line-height: 1.75;
+            padding-left: 1.25rem;
+        }
+
+        .content li {
+            margin-bottom: 0.4rem;
+        }
+
+        .legal-links {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e9ecef;
+            text-align: center;
+        }
+
+        .legal-links a {
+            color: #666;
+            text-decoration: none;
+            margin: 0 0.75rem;
+            font-size: 0.9rem;
+        }
+
+        .legal-links a:hover {
+            color: #333;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back-link">&larr; Back to Edge Analytics</a>
+
+        <div class="app-header">
+            <h1 class="app-name">draftbot</h1>
+            <p class="app-tagline">AI-generated social content, pushed straight to drafts.</p>
+        </div>
+
+        <div class="content">
+            <h2>What it is</h2>
+            <p>draftbot is an internal tool operated by Edge Analytics. It generates short-form social media content (text + images) using AI providers and pushes it to our own connected TikTok account as <strong>drafts</strong>, where a human reviews and publishes manually.</p>
+
+            <h2>How it works</h2>
+            <ul>
+                <li>Picks a topic from a brand content pack</li>
+                <li>Generates a short script and caption with Anthropic Claude</li>
+                <li>Generates accompanying images with Google Imagen</li>
+                <li>Uploads the result to TikTok as a draft via the Content Posting API</li>
+                <li>A human reviews and publishes from the TikTok app</li>
+            </ul>
+
+            <h2>Scope</h2>
+            <p>draftbot is a single-operator tool. It is not offered as a service to third parties. It only interacts with TikTok accounts that the operator owns and has explicitly authorized.</p>
+
+            <h2>Contact</h2>
+            <p>Questions: <a href="mailto:peter@edgeanalytics.sk">peter@edgeanalytics.sk</a></p>
+        </div>
+
+        <div class="legal-links">
+            <a href="/draftbot/terms/">Terms of Service</a>
+            <a href="/draftbot/privacy/">Privacy Policy</a>
+        </div>
+
+        <footer class="footer" style="margin-top: 3rem;">
+            <p>&copy; 2026 Edge Analytics. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
