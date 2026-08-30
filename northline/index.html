@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northline - Compass & Qibla for iPhone</title>
+    <meta name="description" content="Northline is a compass for iPhone that tells you the truth: live accuracy, calibration honesty, true and magnetic north, coordinates, altitude, declination, bearing lock — and a free Qibla mode with distance to Mecca.">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lora:wght@300;400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Lora:wght@300;400;500;600&display=swap" rel="stylesheet"></noscript>
+    <style>
+        body {
+            font-family: 'Lora', 'Georgia', 'Times New Roman', 'Times', serif;
+            font-display: swap;
+        }
+
+        .app-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 24px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+
+        .app-name {
+            font-family: 'PP Mondwest', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .app-tagline {
+            font-size: 1.25rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .features-section {
+            margin-bottom: 3rem;
+        }
+
+        .features-section h2 {
+            font-family: 'PP Mondwest', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            text-align: left;
+        }
+
+        .feature-card {
+            padding: 1.5rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .feature-card h3 {
+            font-family: 'PP Mondwest', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 0.75rem;
+        }
+
+        .feature-card p {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .support-box {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            text-align: left;
+        }
+
+        .support-box h3 {
+            font-family: 'PP Mondwest', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 0.75rem;
+        }
+
+        .support-box p {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 0.75rem;
+        }
+
+        .support-box a {
+            color: #333;
+        }
+
+        .legal-links {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e9ecef;
+            text-align: center;
+        }
+
+        .legal-links a {
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin: 0 1rem;
+        }
+
+        .legal-links a:hover {
+            color: #333;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .app-name {
+                font-size: 2rem;
+            }
+
+            .app-tagline {
+                font-size: 1.1rem;
+            }
+
+            .app-icon {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back-link">&larr; Edge Analytics</a>
+
+        <div class="app-header">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect fill='%23141414' width='120' height='120' rx='24'/%3E%3Ccircle cx='60' cy='60' r='40' fill='none' stroke='%23f5efe0' stroke-width='4'/%3E%3Cpolygon points='60,26 68,60 60,94 52,60' fill='%23e05252'/%3E%3Cpolygon points='60,26 68,60 60,60 52,60' fill='%23f0b143'/%3E%3Ccircle cx='60' cy='60' r='5' fill='%23f5efe0'/%3E%3C/svg%3E" alt="Northline App Icon" class="app-icon">
+            <h1 class="app-name">Northline</h1>
+            <p class="app-tagline">A compass for iPhone</p>
+        </div>
+
+        <main class="main-content">
+            <section class="features-section">
+                <h2>Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>A Needle You Can Trust</h3>
+                        <p>The needle is only drawn solid when the reading deserves it. Live accuracy is shown as ±N°, a calibration prompt appears exactly when it's needed, and if heading data stops, the needle hollows out — a frozen compass never looks like a working one.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>True North, Really</h3>
+                        <p>True and magnetic north are one tap apart and the choice is remembered. Coordinates, altitude and declination (with its sign) stay on screen — the readouts other compasses removed.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>Qibla, Free Forever</h3>
+                        <p>A great-circle bearing to the Kaaba on the same instrument face, always referenced to true north, with the distance to Mecca and alignment feedback. Never behind the paywall.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>Six Instrument Faces</h3>
+                        <p>Classic is free; Ink, Brass, Contrast, Night and Lume are the Pro perk. Night keeps every colour red so it won't wreck your dark adaptation — a property enforced by a test, not by eye.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features-section">
+                <h2>Support</h2>
+                <div class="support-box">
+                    <h3>Need help?</h3>
+                    <p>Email us at <a href="mailto:peter@edgeanalytics.sk">peter@edgeanalytics.sk</a> and we'll get back to you as soon as we can. Please include your iPhone model and iOS version if you're reporting a problem.</p>
+                    <h3>Common questions</h3>
+                    <p><strong>The compass seems wrong.</strong> Hold the phone flat — tilt is the physical cause of most compass errors, and Northline shows a level bubble plus a warning when tilt passes 12°. If accuracy is poor, the app asks for a figure-8 calibration.</p>
+                    <p><strong>Qibla shows no direction.</strong> The Qibla bearing needs your location once. Allow location access when asked — it is used on the device only and never leaves it.</p>
+                    <p><strong>What does the ± number mean?</strong> It is the sensor's own reported heading accuracy: green within ±10°, amber to ±25°, red beyond. Northline shows it instead of pretending.</p>
+                    <p><strong>How do I restore my Pro purchase?</strong> Northline Pro is a one-time lifetime purchase tied to your Apple ID. Open Settings inside the app and tap Restore Purchases on any new device.</p>
+                </div>
+            </section>
+        </main>
+
+        <div class="legal-links">
+            <a href="/northline/privacy/">Privacy Policy</a>
+            <a href="mailto:peter@edgeanalytics.sk">Contact Support</a>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2026 Edge Analytics. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
