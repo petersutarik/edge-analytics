@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truebeat - Metronome &amp; Tuner for iPhone</title>
+    <meta name="description" content="Truebeat is a metronome and chromatic tuner for iPhone: sample-accurate timing that never drifts, a cents-precise tuner, six instrument faces, and no full-screen ads while you play. One purchase, Pro forever.">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lora:wght@300;400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Lora:wght@300;400;500;600&display=swap" rel="stylesheet"></noscript>
+    <style>
+        body {
+            font-family: 'Lora', 'Georgia', 'Times New Roman', 'Times', serif;
+            font-display: swap;
+        }
+
+        .app-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 24px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+
+        .app-name {
+            font-family: 'PP Mondwest', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .app-tagline {
+            font-size: 1.25rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .features-section {
+            margin-bottom: 3rem;
+        }
+
+        .features-section h2 {
+            font-family: 'PP Mondwest', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            text-align: left;
+        }
+
+        .feature-card {
+            padding: 1.5rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .feature-card h3 {
+            font-family: 'PP Mondwest', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 0.75rem;
+        }
+
+        .feature-card p {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .support-box {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            text-align: left;
+        }
+
+        .support-box h3 {
+            font-family: 'PP Mondwest', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 0.75rem;
+        }
+
+        .support-box p {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 0.75rem;
+        }
+
+        .support-box a {
+            color: #333;
+        }
+
+        .legal-links {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e9ecef;
+            text-align: center;
+        }
+
+        .legal-links a {
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin: 0 1rem;
+        }
+
+        .legal-links a:hover {
+            color: #333;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .app-name {
+                font-size: 2rem;
+            }
+
+            .app-tagline {
+                font-size: 1.1rem;
+            }
+
+            .app-icon {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back-link">&larr; Edge Analytics</a>
+
+        <div class="app-header">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect fill='%23141414' width='120' height='120' rx='24'/%3E%3Cpath d='M48 24 L72 24 L84 96 L36 96 Z' fill='none' stroke='%23f5efe0' stroke-width='4'/%3E%3Cline x1='60' y1='88' x2='76' y2='34' stroke='%23f0b143' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='71' cy='50' r='6' fill='%23f0b143'/%3E%3C/svg%3E" alt="Truebeat App Icon" class="app-icon">
+            <h1 class="app-name">Truebeat</h1>
+            <p class="app-tagline">A metronome and tuner for iPhone</p>
+        </div>
+
+        <main class="main-content">
+            <section class="features-section">
+                <h2>Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>The Click That Doesn't Drift</h3>
+                        <p>Every beat is scheduled sample-accurately against the audio clock, so the tempo cannot drift over a long take. It keeps playing with the screen locked, and start/stop and &plusmn;5 BPM work from the lock screen.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>A Real Metronome</h3>
+                        <p>30&ndash;260 BPM with a rotary dial, buttons, and tap tempo. Time signatures from 1/4 to 7/4 plus 3/8, 6/8, 9/8, and 12/8, subdivisions, and a per-beat accent pattern you can mute. A haptic-only mode lets you practice in silence.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>Chromatic Tuner</h3>
+                        <p>Works for any instrument, with no picker to get wrong. A cents readout with a &plusmn;5&cent; in-tune window and a pitch history strip &mdash; not just a green light. A4 is calibratable from 415 to 466 Hz.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>Six Instrument Faces (Pro)</h3>
+                        <p>Classic amber, quiet Ink, lacquered Brass, high-visibility Contrast, stage-safe dim red, and luminous Lume. Pro also unlocks unlimited presets and setlists and every click voice &mdash; and removes all ads. One purchase, no subscription.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features-section">
+                <h2>Support</h2>
+                <div class="support-box">
+                    <h3>Need help?</h3>
+                    <p>Email us at <a href="mailto:peter@edgeanalytics.sk">peter@edgeanalytics.sk</a> and we'll get back to you as soon as we can. Please include your iPhone model and iOS version if you're reporting a problem.</p>
+                    <h3>Common questions</h3>
+                    <p><strong>The tuner doesn't react.</strong> The tuner needs microphone access &mdash; turn it on in iOS Settings &rarr; Truebeat. The metronome works without it.</p>
+                    <p><strong>How do I restore my Pro purchase?</strong> Truebeat Pro is a one-time lifetime purchase tied to your Apple ID. Open Settings inside the app and tap Restore Purchases on any new device.</p>
+                    <p><strong>Does the click keep playing when I lock the screen?</strong> Yes. The click continues with the screen locked, and you can start, stop, and nudge the tempo &plusmn;5 BPM straight from the lock screen.</p>
+                    <p><strong>My orchestra tunes to 442 Hz.</strong> Open the tuner and set the Reference A4 anywhere from 415 to 466 Hz &mdash; readings recalibrate instantly.</p>
+                </div>
+            </section>
+        </main>
+
+        <div class="legal-links">
+            <a href="/truebeat/privacy/">Privacy Policy</a>
+            <a href="mailto:peter@edgeanalytics.sk">Contact Support</a>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2026 Edge Analytics. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
