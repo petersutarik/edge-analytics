@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiber - Fiber Tracker for iPhone</title>
+    <meta name="description" content="Fiber is a fiber tracker for iPhone: log food in seconds, ramp up gently so your gut can keep up, and count 30 plants a week. No account, no ads, and your log stays on your iPhone.">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lora:wght@300;400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Lora:wght@300;400;500;600&display=swap" rel="stylesheet"></noscript>
+    <style>
+        body {
+            font-family: 'Lora', 'Georgia', 'Times New Roman', 'Times', serif;
+            font-display: swap;
+        }
+
+        .app-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 24px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+
+        .app-name {
+            font-family: 'PP Mondwest', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .app-tagline {
+            font-size: 1.25rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .features-section {
+            margin-bottom: 3rem;
+        }
+
+        .features-section h2 {
+            font-family: 'PP Mondwest', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            text-align: left;
+        }
+
+        .feature-card {
+            padding: 1.5rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .feature-card h3 {
+            font-family: 'PP Mondwest', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 0.75rem;
+        }
+
+        .feature-card p {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .support-box {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            text-align: left;
+        }
+
+        .support-box h3 {
+            font-family: 'PP Mondwest', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 0.75rem;
+        }
+
+        .support-box p {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 0.75rem;
+        }
+
+        .support-box a {
+            color: #333;
+        }
+
+        .legal-links {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e9ecef;
+            text-align: center;
+        }
+
+        .legal-links a {
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin: 0 1rem;
+        }
+
+        .legal-links a:hover {
+            color: #333;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .app-name {
+                font-size: 2rem;
+            }
+
+            .app-tagline {
+                font-size: 1.1rem;
+            }
+
+            .app-icon {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back-link">&larr; Edge Analytics</a>
+
+        <div class="app-header">
+            <img src="/fiber/icon.png" alt="Fiber App Icon" class="app-icon">
+            <h1 class="app-name">Fiber</h1>
+            <p class="app-tagline">A fiber tracker for iPhone</p>
+        </div>
+
+        <main class="main-content">
+            <section class="features-section">
+                <h2>Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>Log in Seconds</h3>
+                        <p>Search nearly 900 foods offline, scan the barcode on packaged food, pick a real portion like "1 cup" or "1 slice", and re-log favourites with one tap.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>Ramp Up Gently</h3>
+                        <p>Adding fiber too fast is the classic way to end up bloated. Fiber starts a little above what you eat now and raises your goal a few grams each week until you reach your target.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>30 Plants a Week</h3>
+                        <p>Fiber counts the different plants you eat each week. Red lentils and lentil soup count as one plant, so the number means something.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>Private by Design</h3>
+                        <p>No account, no ads, no analytics. Your log stays on your iPhone. Widgets show today's progress, and you can save each entry to Apple Health if you like.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features-section">
+                <h2>Support</h2>
+                <div class="support-box">
+                    <h3>Need help?</h3>
+                    <p>Email us at <a href="mailto:peter@edgeanalytics.sk">peter@edgeanalytics.sk</a> and we'll get back to you as soon as we can. Please include your iPhone model and iOS version if you're reporting a problem.</p>
+                    <h3>Common questions</h3>
+                    <p><strong>Where does my daily goal come from?</strong> From the US Dietary Reference Intakes for your sex and age (25&ndash;38 g), or the NHS 30 g if your iPhone's region is the UK. You can set your own in Settings &rarr; Daily goal.</p>
+                    <p><strong>Why is my goal lower than the recommendation?</strong> That's the ramp-up plan. It raises your goal a few grams each week so your gut can adjust. Turn it off or change the weekly step in Settings &rarr; Plan.</p>
+                    <p><strong>A barcode isn't found.</strong> Packaged food comes from Open Food Facts, a free community database. If a product is missing or has no fiber listed, Fiber offers Quick add with the name filled in.</p>
+                    <p><strong>How do I get my data out?</strong> Settings &rarr; Export CSV saves every entry to a spreadsheet file.</p>
+                    <p><strong>Fiber isn't showing up in Apple Health.</strong> Turn on Save to Apple Health in Fiber&rsquo;s Settings, then check that Fiber is allowed to write Dietary Fiber in the Health app under Sharing &rarr; Apps &rarr; Fiber.</p>
+                    <p>Fiber gives general nutrition information, not medical advice. If you have a digestive condition, talk to your doctor before changing your diet.</p>
+                </div>
+            </section>
+        </main>
+
+        <div class="legal-links">
+            <a href="/fiber/privacy/">Privacy Policy</a>
+            <a href="mailto:peter@edgeanalytics.sk">Contact Support</a>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2026 Edge Analytics. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
